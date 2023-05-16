@@ -1,0 +1,1502 @@
+/* IMPORT FONT */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Inter"}
+
+/*region colores*/
+
+:root{
+    --colorRojo:         #e42518;
+
+    --colorPrincipal:    #558914;
+
+    --colorGrisClaro: #124f09;
+
+    --colorGrisOscuro: #7ead62;
+
+    --colorClaro:        #f1f1f1;
+}
+
+.colorRojo{color: #e42518;}
+
+.colorPrincipal{color: #558914;}
+
+.colorGrisClaro{color: #90b9c3;}
+
+.colorGrisOscuro{color: #08838a;}
+
+.colorClaro{color: #f1f1f1;}
+
+
+
+
+.bgColorRojo{background: #e42518;}
+
+.bgcolorPrincipal{background: #558914;}
+
+.bgColorGrisClaro{background: #90b9c3;}
+
+.bgColorGrisOscuro{background: #08838a;}
+
+.bgColorClaro{background: #f1f1f1;}
+
+/*endregion*/
+
+/*region header*/
+
+.separador{
+    margin-bottom: 200px;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(0, 4rem);
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 98;
+    border-bottom: 1px solid gray;
+}
+
+.contenedorMenu {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+    /*min-width: 220px;*/
+}
+
+#headerUsuario{
+    margin: 8px;
+}
+
+.IconoHeader {
+    margin-top: 3px;
+    height: 80%;
+    margin-left: 0;
+}
+
+.logoGti {
+    padding: 0;
+    height: 100%;
+
+}
+.botonHeader{
+    border-color: var(--colorPrincipal) ;
+    color: white;
+    background-color: var(--colorPrincipal) ;
+    width: 8rem;
+    height: 2.4rem;
+    margin-top: 0.6rem;
+    margin-right: 4px;
+    font-size: 1.1rem;
+    border-radius: 5px;
+
+}
+
+
+
+.botonHeader:hover{
+
+    border-color: var(--colorGrisClaro) ;
+    color: white;
+    background-color: var(--colorGrisClaro) ;
+
+}
+.contenedorLogo {
+    width: 12rem;
+}
+
+/*endregion*/
+
+/*region nav*/
+
+/* Style the navigation menu */
+.topnav {
+    overflow: hidden;
+    background-color: #ddd;
+    position: sticky;
+    top: 60px; /*Esto es lo que hace que se quede sticky, junto a la propiedad sticky, por supuesto*/
+    z-index: 50;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+    display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+    color: var(--colorPrincipal);
+    background-color: var(--colorClaro) ;
+    text-decoration: none !important;
+    font-size: 18px;
+    display: block;
+    font-family: Inter;
+
+    /*Con esto de abajo el texto de los links del menú de navegación se va a la derecha*/
+    /*text-align: right;*/
+
+}
+#quienesSomosLink{
+    border-top: 1px solid var(--colorPrincipal);
+    border-bottom: 1px solid var(--colorPrincipal);
+}
+
+#contactaLink{
+    border-top: 1px solid var(--colorPrincipal);
+}
+
+#escuchaLink{
+    border-top: 1px solid var(--colorPrincipal);
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+    background-color: #ddd;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+    background-color: var(--colorGrisClaro);
+    color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.otrasPaginas {
+    padding: 14px 16px;
+
+}
+
+.botonSolicitarPresupuesto {
+    border-color: #558914 ;
+    color: white;
+    background-color: #558914;
+}
+
+.contenedorBotones {
+    display: block;
+    margin: 16px;
+}
+
+#aInicioDeSesionHeader {
+    padding-left: 0;
+}
+
+#headerIniciar{
+    padding: 14px 16px;
+    font-size: 17px;
+    display: block;
+    font-family: Inter;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    width: 370px;
+}
+
+#headerPresupuesto{
+    padding: 14px 16px;
+    font-size: 17px;
+    display: block;
+    font-family: Inter;
+    border-radius: 5px;
+    width: 370px;
+}
+#headerCerrarSesion{
+    text-decoration: none;
+}
+
+/*endregion*/
+
+/*region landing*/
+
+.Hero{
+    padding-top: 0;
+}
+
+#contenido{
+    padding-top: 118px;
+}
+
+#pag-principal div a div button{
+    margin-top: 20px;
+}
+
+#espacio-descubrir{
+    margin-top: 360px;
+}
+html {
+    scroll-behavior: smooth;
+}
+#pag-principal{
+    background-image :url("../app/img/backgroundHero2.jpeg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+#pag-principal h1{
+    color: white;
+    font-size: 42px;
+    height: 102px;
+    margin: 0;
+    font-weight: 500;
+}
+
+#pag-principal h2{
+    color: white;
+    font-size: 16px;
+    height: 54px;
+    margin: 0 auto;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+#pag-principal button{
+    background-color:var(--colorPrincipal);
+    border:var(--colorPrincipal)  solid;
+    color:white;
+    width: 234px;
+    height: 40px;
+    text-align: center;
+    line-height:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#pag-principal button:hover{
+    border-color: var(--colorGrisClaro) ;
+    color: white;
+    background-color: var(--colorGrisClaro) ;
+
+}
+
+#espacio-descubrir{
+    transform: translate(0%, -60%);
+    height: 40px;
+    padding: 0;
+}
+
+#espacio-descubrir p{
+    color: white;
+    padding: 0;
+    margin: 0;
+    transform: translate(0%, 25%);
+    text-decoration: none;
+}
+
+/*endregion*/
+
+/*region contactar*/
+
+#contactar{
+    background: white;
+    background-size: 100vw 100vh;
+    margin: 0 auto;
+}
+
+#contactar form{
+    width: 550px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    box-sizing: border-box;
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--colorGrisOscuro);
+    background-color: white;
+}
+
+#contactar h1{
+    font-size: 34px;
+    text-align: center;
+    color: var(--colorGrisOscuro);
+    margin-top: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.infoContactar{
+    font-size: 18px;
+    text-align: center;
+    color: var(--colorGrisOscuro);
+;
+    margin-bottom: 1.5rem;
+}
+
+input, textarea{
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 7px;
+    font-size: 13px;
+    box-sizing: border-box;
+    border: 1px solid #333333;
+}
+
+input{
+    border-top: 1px #333333;
+    border-right: #333333 1px;
+    border-left: #333333 1px;
+}
+
+textarea{
+    min-height: 100px;
+    max-width: 100%;
+    border-radius: 5px;
+}
+
+#boton{
+    background: var(--colorPrincipal);
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+
+#boton:hover{
+    border-color: var(--colorGrisClaro) ;
+    color: white;
+    background-color: var(--colorGrisClaro) ;
+}
+
+#formulario div{
+    margin-bottom: 1.5rem}
+
+#error{
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    color: var(--colorPrincipal);
+    font-size: 18px;
+}
+#correcto {
+    text-align: center;
+    color: #fff;
+    padding: 1rem;
+    color: var(--colorPrincipal);
+    font-size: 18px;
+}
+
+/*endregion*/
+
+/*region productos hero*/
+
+.productoshero h1{
+    margin-top: 2rem;
+    color: var(--colorGrisOscuro);
+    text-align: center;
+}
+
+.productoshero h2{
+    margin-bottom: 2rem;
+    color: var(--colorGrisOscuro);
+    text-align: center;
+}
+
+.productoshero {
+    background: white;
+    padding: 20px;
+    margin: auto;
+    width: 90%;
+    margin-top:  40px;
+}
+/*Esto arregla que algunas cajas de producto sean mas largas que otras*/
+.productoshero div div div{
+    min-height: 246.7px;
+}
+
+.caja_productos{
+    text-align: center;
+}
+
+.caja_productos img{
+    width: 54px;
+    height: 54px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    color: black;
+}
+
+/*endregion*/
+
+/*region textos hero*/
+
+
+.textoshero h3{
+    color:white;
+    font-size: 25px;
+}
+
+.textoshero{
+    background: var(--colorGrisOscuro);
+    margin: auto;
+    width: 90%;
+    margin-top: 80px;
+    color: white;
+    text-align: center;
+}
+
+.textoshero hr{
+    background: white;
+    height: 2px;
+}
+
+.textoshero button{
+    background-color:var(--colorPrincipal);
+    border:var(--colorPrincipal)  solid;
+    color:white;
+    width: 234px;
+    height: 40px;
+    text-align: center;
+    line-height:10px;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.textoshero button:hover{
+    border-color: var(--colorGrisClaro) ;
+    color: white;
+    background-color: var(--colorGrisClaro) ;
+}
+
+@media(max-width: 823px){
+    .textoshero h2{
+        font-size: 24px;
+    }
+}
+
+    .reducirTamano{
+        font-size: 20px;
+    }
+
+/*endregion*/
+
+/*region reseñas hero*/
+
+.reseñas{
+    margin-top: 2rem;
+    color: #333333;
+}
+
+#foto_reseñas{
+    width: 57px;
+    height: 57px;
+}
+
+.reseñas h1{
+    margin: 0 auto;
+    font-weight: bold;
+    font-size: 23px;
+    color: #333333;
+    margin-bottom: 1rem;
+}
+
+.caja_reseñas{
+    width: 340px;
+    height: 200px;
+    text-align: center;
+    margin: 0 auto;
+    color: #333333;
+    margin-bottom: 5%;
+}
+
+.caja_reseñas h2{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.caja_reseñas p{
+    text-align: justify;
+}
+
+/*endregion*/
+
+/*region productos*/
+
+
+.titulo_productos{
+    margin-top: 2rem;
+    color: var(--colorGrisOscuro);
+    text-align: center;
+}
+
+.contenedorProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1100px;
+}
+
+.contenedorProductos div img{
+    width: 54px;
+    height: 54px;
+}
+
+.contenedorProductos div div h2{
+    font-weight: 500;
+    font-size: 26px;
+    text-transform: uppercase;
+    margin-top: 14px;
+    color: var(--colorGrisOscuro);
+}
+
+.contenedorProductos div p{
+    margin-top: 4%;
+    font-weight: 600;
+    font-size: 13px;
+    text-align: justify;
+}
+
+.caja_ambiente{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 2%;
+    width: 340px;
+    text-align: center;
+}
+
+.caja_riego{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 2%;
+    width: 340px;
+    text-align: center;
+}
+
+.caja_localizacion{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 2%;
+    width: 340px;
+    text-align: center;
+}
+
+.caja_seguridad{
+    background-color: #fff;
+    border-radius: 5px;
+    margin: 2%;
+    padding: 2%;
+    width: 340px;
+    text-align: center;
+}
+
+/*endregion*/
+
+/*region nosotros*/
+
+.nosotros H1{
+    margin-top: 3rem;
+    color: var(--colorGrisOscuro);
+    text-align: center;
+}
+
+.nosotros H2{
+    text-align: center;
+    margin-bottom: 1rem;
+    color: var(--colorGrisOscuro);
+    margin-top: 1rem;
+}
+
+.nosotros p{
+    padding: 1rem;
+}
+
+#textosobrenosotros{
+    text-align: center;
+}
+
+.fundamentos p img{
+    margin-right: 1rem;
+}
+
+.fundamentos p{
+    margin-bottom: 1rem;
+}
+
+.fundamentos{
+    width: 40%;
+    margin: 0 auto;
+    padding: 3rem;
+    background-color: white;
+}
+
+@media(max-width: 760px){
+    .fundamentos{
+        width: 100%;
+    }
+}
+
+.cajasequipo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    color: #333333;
+}
+
+.cajasequipo div{
+    background-color: #fff;
+    border-radius: 5px;
+    width: 140px;
+    height: 170px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 5%;
+    padding: 1rem;
+    margin: 2%;
+    padding: 2%;
+}
+
+@media(min-width: 823px){
+    .cajasequipo{
+        width: 780px;
+        margin: 0 auto;
+        margin-bottom: 200px;
+    }
+    .cajasequipo div{
+        width: 180px;
+        height: 170px;
+    }
+}
+
+@media(min-width: 638px){
+    #textosobrenosotros{
+        width: 580px;
+        margin: 0 auto;
+        margin-bottom: 3rem;
+    }
+}
+
+.cajasequipo div img{
+    width: 90px;
+    height: 90px;
+}
+
+.cajasequipo div H3{
+    margin-bottom: -0.5rem;
+}
+
+.flecha_nosotros{
+    height: 20px;
+    width: 20px;
+    float: right;
+    margin-top: 5px;
+}
+
+.accordion{
+    width: 600px;
+    margin: 0 auto;
+}
+
+@media (max-width: 600px){
+    .accordion{
+        width: 470px;
+    }
+}
+
+.nosotros h5 a{
+    text-decoration: none;
+    color: #333333;
+}
+
+#tick{
+    height: 35px;
+    width: 35px;
+    color: var(--colorGrisOscuro);
+}
+
+/*endregion*/
+
+/*region página de inicio*/
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: Inter;
+    background-color: var(--colorClaro) !important;
+}
+
+.home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex: 1 1 auto;
+}
+
+.in-flex {
+    display: flex;
+    justify-content: center;
+    flex: 1 1 auto;
+    padding: 25px;
+    margin-bottom: 10px;
+}
+
+.casita {
+    margin-top: 10px;
+    margin-right: 5px;
+    fill: #558914;
+}
+
+.cuestionario{
+    justify-content: center;
+    text-align: left;
+}
+
+.labels{
+    margin-left: 15px;
+    margin-bottom: 1rem;
+}
+
+h1{
+    font-weight: lighter;
+    font-size: 10px;
+}
+
+/*Esto afecta al logo para que quede como el diseño*/
+.logo {
+
+}
+
+/*Esto es para el texto que pone "Inicia sesión" en grande*/
+.textoinicio{
+    font-size: 300%;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 70px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+/*Esto es para el texto de encima de las cajas de usuario y contraseña, siendo este texto "Usuario" y "Contraseña"*/
+
+
+/*Esto afecta al div que contiene todos los elementos del login (los labels, los inputs, los botones y el "¿has olvidado la contraseña?")*/
+in-flex div{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
+    padding: 10px;
+}
+
+.botonInicioSesion {
+    border-color: #273f09 ;
+    color: white;
+    background-color: #558914;
+    margin-top: 2rem;
+}
+
+button {
+    text-align: center;
+    text-decoration: none;
+    margin: 0.6rem;
+    width: 85%;
+    height: 2rem;
+    border: #273f09 solid 2px;
+    border-radius: 5px;
+    background-color: #E1C7DD;
+    color: #558914;
+    font: 400 1rem Inter;
+    cursor: pointer;
+}
+
+.UsuarioContraseña{
+    text-align: initial;
+    text-decoration: none;
+    padding-left: 5px;
+    margin: 0.6rem;
+    margin-top: 3px;
+    width: 85%;
+    height: 2rem;
+    border: 0;
+    border-bottom: #152105 solid 2px;
+    /*border-radius: 5px;*/
+    background-color: #e9f9d6;
+    color: #558914;
+    font: 400 1rem Inter;
+}
+
+.olvidarContraseña {
+    text-align: left;
+    margin-left: 0.6rem;
+    width: 85%;
+    height: 2rem;
+    color: #152105;
+    font: 400 0.75rem Inter;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(0, 4rem);
+    position: sticky;
+    top: 0;
+    background-color: #f1f1f1;
+    z-index: 98;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+.contenedorMenu {
+    margin-right: 1rem;
+    padding: 0.2rem;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.IconoHeader {
+    padding: 10px;
+    height: 60%;
+}
+
+.logoGti {
+    padding: 5px;
+    height: 100%;
+}
+
+#divContraseña{
+    margin-bottom: 1rem;
+}
+
+#divUsuario{
+    margin-bottom: 1rem;
+}
+
+/*endregion*/
+
+/*region página de usuario*/
+
+
+h1{
+    font-weight: bold;
+    color: #797979;
+    font-size: 24px;
+}
+
+.subtitulo{
+    font-weight: bold;
+    color: #797979;
+    font-size: 13px;
+}
+
+h4{
+    font-size: 20px;
+    color: #797979;
+    font-weight: bold;
+}
+
+h5{
+    font-weight: normal;
+    color: white;
+}
+
+h6{
+    font-size: 12px;
+    color: #797979;
+    font-weight: bold;
+}
+
+.contenedorcuadrados{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center
+}
+
+/* BIENVENIDA */
+
+.bienvenida{
+    margin-top: 15%;
+    text-align: center;
+    margin-bottom: -8%;
+}
+
+.textosbienvenida{
+    display: inline-block;
+    margin-left: 1%;
+}
+
+.titulo{
+    margin-bottom: 15%;
+}
+
+.subtitulo{
+    margin-top: -15%;
+    margin-left: 6%;
+    width: max-content;
+}
+
+/* CAJA MEDIDAS */
+
+.div_textomedidas{
+    margin-top: -9%;
+    background-color: #558914;
+    color: white;
+    font-size: 13px;
+    height: 31px;
+    width: 182px;
+    margin-left: -1px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.textomedidas{
+    padding-top: 5%;
+}
+
+.medidasarriba{
+    display: flex;
+}
+
+.medidasabajo{
+    display: flex;
+}
+
+.humedad{
+    margin-top: -20px;
+}
+
+.salinidad{
+    margin-top: -20px;
+}
+
+.temperatura{
+    margin-top: -20px;
+}
+
+.iluminacion{
+    margin-top: -20px;
+}
+.medidas{
+    text-align: center;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    margin: 7px;
+    height: 140px;
+    width: 180px;
+}
+
+.texto{
+    padding-top: -10px;
+}
+
+.fondoblanco{
+    color: #797979;
+    width: 90px;
+    height: 54px;
+    text-align: center;
+}
+
+.fondogris{
+    color: #797979;
+    width: 90px;
+    height: 54px;
+    text-align: center;
+    background-color: #f2f2f2;
+}
+
+/* CAJA LOCALIZACIÓN */
+
+.localizacionusuario{
+    text-align: center;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    margin: 7px;
+    height: 140px;
+    width: 180px
+}
+
+.div_textolocalizacion{
+    margin-top: 17%;
+    background-color: #558914;
+    color: white;
+    font-size: 13px;
+    height: 31px;
+    width: 182px;
+    margin-left: -2px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 5px;
+}
+
+.textolocalizacion{
+    padding-top: 5%;
+}
+
+/* CAJA ALERTAS */
+
+.alertas{
+    margin-top: 2%;
+    text-align: center;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    margin: 7px;
+    height: 140px;
+    width: 180px
+}
+
+
+.div_textoverhistorial{
+    margin-top: 23%;
+    background-color: #558914;
+    color: white;
+    font-size: 13px;
+    height: 31px;
+    width: 182px;
+    margin-right: 4px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.textoverhistorial{
+    padding-top: 5%;
+}
+
+
+/* CAJA INFORMACIÓN */
+
+.informacion{
+    text-align: center;
+    border: 2px solid #797979;
+    border-radius: 5px;
+    margin: 7px;
+    height: 140px;
+    width: 180px
+}
+
+
+.div_textomasinfo{
+    margin-left: -1px;
+    margin-top: 17%;
+    background-color: #558914;
+    color: white;
+    font-size: 13px;
+    height: 31px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+
+.textomasinfo{
+    padding-top: 5%;
+}
+
+.mapa{
+    margin-top: 23%;
+}
+
+.textoalerta{
+    margin-top: 27%;
+}
+
+.revision{
+    margin-top: 23%;
+}
+
+/*endregion*/
+
+/*region ajustes usuario*/
+
+* {box-sizing: border-box;}
+
+.open-button {
+    background-color: #555;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0.8;
+    bottom: 23px;
+    right: 28px;
+    width: 280px;
+    margin-left: 3.5rem;
+}
+
+.form-popup {
+    display: none;
+    width: 800px;
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 5px;
+    z-index: 5;
+}
+
+
+.form-container {
+    max-width: 800px;
+    padding: 10px;
+    background-color: white;
+}
+
+.form-container input[type=text], .form-container input[type=password], .form-container input[type=email],.form-container input[type=tel] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #f1f1f1;
+}
+
+
+.form-container input[type=text]:focus, .form-container input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+}
+
+
+.form-container .btn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    height: 50px;
+    margin-bottom: 10px;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+
+.form-container .cancel {
+    background-color: red;
+    margin: 0 auto;
+    width: 100%;
+    height: 50px;
+}
+
+
+.form-container .btn:hover, .open-button:hover {
+    opacity: 1;
+}
+
+.div_ajustes_usuario{
+    width: 436px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    background-color: #e1e1e1;
+    padding: 1rem;
+    border-radius: 5px;
+
+}
+
+.encabezado_ajustes_usuario{
+    text-align: center;
+}
+
+.encabezado_ajustes_usuario h1{
+    margin-bottom: 1rem;
+}
+
+.encabezado_ajustes_usuario p{
+    margin-bottom: 1rem;
+}
+
+.div_ajustes_usuario table{
+    margin: 0 auto;
+}
+
+.div_ajustes_usuario table tr td{
+    margin-left: 1rem;
+    width: 210px;
+    height: 50px;
+}
+
+.div_ajustes_usuario table tr td label{
+    font-weight: bold;
+}
+
+@media(max-width: 804px){
+    .form-container{
+        max-width: 500px;
+    }
+
+    .form-popup {
+        display: none;
+        width: 500px;
+        position: absolute;
+        top: 55%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 5px;
+        z-index: 5;
+    }
+}
+
+/*endregion*/
+
+/*region pagina de admin*/
+
+
+/*Esto contiene la foto, el saludo al usuario y la frase de abajo*/
+#contenedorUsuario {
+    margin-top: 80px;
+    /* We first create a flex layout context */
+    display: flex;
+
+    /* Then we define the flow direction
+       and if we allow the items to wrap
+     * Remember this is the same as:
+     * flex-direction: row;
+     * flex-wrap: wrap;
+     */
+    flex-flow: row wrap;
+
+    /* Then we define how is distributed the remaining space */
+    justify-content: center;
+    align-items: center;
+}
+/*La foto del usuario, tiene un radio circular */
+#fotoUsuario{
+    height: 80px;
+    width: 80px;
+    border-radius: 50px;
+}
+/*La caja que contiene el saludo y la frase de abajo*/
+#holaUsuario{
+    margin-left: 10px;
+}
+/*El saludo donde dice el nombre del usuario*/
+#saludo{
+    font-size: 150%;
+    font-weight: 600;
+}
+/*Contiene los 4 cuadrados*/
+#contenedorCuadrados{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+/*Esto define cada uno de los 4 cuadrados*/
+.cuadrado{
+    margin: 7px;
+    height: 140px;
+    width: 180px;
+    border: 1px solid black;
+}
+/*Esta caja contiene los meses y el número de dinero*/
+.informeGastosVentas{
+    text-align: right;
+}
+/*Esto modifica los meses*/
+.mesGastosVentas{
+    font-size: 70%;
+}
+/*Esto modifica el número del dinero*/
+.numGastosVentas{
+    font-size: 85%;
+}
+.botonInforme{
+    background-color: #558914;
+    color: #fff;
+    border: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+/*endregion*/
+
+/*region restablecer contraseña*/
+
+.restablecercontraseña{
+    text-align: center;
+    width: 500px;
+    margin: 0 auto;
+    margin-top: 3rem;
+    border-radius: 5px;
+    background: white;
+    padding: 1rem;
+}
+
+.restablecercontraseña form{
+    margin: 0 auto;
+    max-width: 370px;
+    margin-top: 2rem;
+
+
+}
+
+.restablecercontraseña label{
+    max-width: 450px;
+    margin-bottom: 2rem;
+}
+
+.restablecercontraseña h1{
+    color: var(--colorGrisOscuro);
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+
+}
+
+.volver{
+    color: #333333;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.volver_restablecercontraseña:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.botonenviar_restablecercontraseña{
+    padding-top: 2px;
+    margin-top: 1rem;
+    width: 450px;
+    height: 40px;
+    border: 0;
+    margin-bottom: 1rem;
+}
+
+.correo_restablecercontraseña{
+    width: 450px;
+}
+
+.restablecercontraseña form input{
+    border-radius: 5px;
+    margin-bottom: 1rem;
+    border: 1px gray solid;
+}
+#boton_enviar{
+    border: none;
+    text-align: center;
+    margin: 0 auto;
+    background-color: #558914;
+    color: white;
+}
+
+/*endregion*/
+
+/*region consulta enviada*/
+
+body{
+    background: white;
+    background-size: 100vw 100vh;
+    margin: 0;
+    background-attachment: fixed;
+    font-family: Inter;
+}
+
+/*endregion*/
+
+/*region página temporal*/
+
+#avisoTemporal{
+    text-align: center;
+    font-size: 30px;
+    font-family: Inter;
+}
+
+/*endregion*/
+
+/*region footer*/
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap%27');
+h1, h2, h3, h4, h5, h6, p {
+    font-family: "Inter"}
+
+
+footer{
+
+    background: var(--colorGrisClaro);
+    padding: 20px;
+    margin-top: 5rem;
+    bottom: 0px;
+    width: 100%;
+}
+
+footer p{
+
+    color: white;
+}
+
+/*endregion*/
+
+/*region mapas*/
+
+/*Esta sección es para las medidas de abajo de temperatura, humedad, etc*/
+
+.mapasContenedorMedidas{
+    min-width: 300px;
+    margin: 1rem;
+    display: block;
+}
+
+.mapasContenedorMedidas div{
+    font-size: 2rem;
+}
+
+.mapasContenedorMedidas img{
+    height: 8rem;
+    width: 15rem;
+
+}
+
+/*Esta sección es para el mapas y los desplegables*/
+
+#map{
+    z-index: 0;
+}
+
+#mapasSeccion{
+    z-index:-2;
+}
+
+/*Desplegables*/
+
+#selector-parcelas{
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    /*TODO: Conseguir que justify content: flex-end funcione, lo hará más responsive*/
+    /*justify-content: flex-end;*/
+    padding: 10px;
+    margin: 10px;
+}
+
+#mapasContenedorDesplegables select{
+    /*Tengo que recordar hacer los desplegables grandes, para que en móvil se puedan*/
+    /*pulsar sin problemas*/
+    max-width: 210px;
+    border: 1px solid black;
+    /*background-color: hotpink;*/
+    margin: 10px 0;
+    /*Si funciona justify content, comentar ambos de abajo*/
+    margin-left: 22%;
+    z-index: 3;
+}
+/*endregion*/

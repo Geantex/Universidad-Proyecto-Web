@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de sesión</title>
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+
+
+    <script src="../js/login.js"></script>
+
+    <style>
+
+        /* Login Acceso Admin */
+
+
+        .form-signin {
+            max-width: 400px;
+            padding: 15px;
+            margin: 0 auto;
+        }
+        .form-signin .form-signin-heading,
+        .form-signin .checkbox {
+            margin-bottom: 10px;
+        }
+
+        .form-signin-heading-color{
+            color: #7EAD62FF;
+            text-align: center;
+        }
+
+        .form-signin .checkbox {
+            font-weight: normal;
+        }
+        .form-signin .form-control {
+            position: relative;
+            font-size: 16px;
+            height: auto;
+            padding: 10px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .form-signin .form-control:focus {
+            z-index: 2;
+        }
+        .form-signin input[type="text"] {
+            margin-bottom: -1px;
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+        .form-signin input[type="password"] {
+            margin-bottom: 10px;
+            border-top-left-radius: 0;
+            border-top-right-radius: 0;
+        }
+        .botonInicioSesion{
+            border-radius: 5px;
+            border-color: #558914FF ;
+
+        }
+    </style>
+</head>
+<header>
+
+
+    <div style="width:100% ;">
+
+        <a href="../index.php"><img style="height: 60px;" src="img/logoverde.png" class="logoGti" alt="El logo de la empresa, las letras G T I, con la T y la I de color verde">
+        </a>
+
+        <a href="javascript:void(0);" onclick="myFunction()"><img class="IconoHeader float-right" src="img/lineas.svg"></a>
+
+
+
+    </div>
+
+
+
+</header>
+
+<!--Este es el menú desplegable, cuando hacemos click en el icono del header-->
+
+<div class="topnav">
+
+    <div id="myLinks">
+
+        <!--TODO: Hay que añadir páginas para cada una de estos links, aunque sean de demostración que son links-->
+
+        <a class="otrasPaginas" href="productos.php">Nuestros productos</a>
+        <a id="contactaLink" class="otrasPaginas" href="contactar.php">Contacta</a>
+        <a id="quienesSomosLink" class="otrasPaginas" href="nosotros.php">¿Quiénes somos?</a>
+
+    </div>
+
+</div>
+
+</div>
+
+<!--Código de JavaScript para desplegar el menú desplegable al hacer click en el icono de las 3 líneas horizontales en el header-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<!--FIN DEL HEADER-->
+<body>
+
+
+<section>
+
+
+
+
+    <div class="container" style="margin-top: 2%">
+
+        <form id="formLogin" method="post" action=""  class="form-signin bg-white">
+
+
+
+            <h3 class="form-signin-heading-color">INICIAR SESIÓN</h3><br>
+
+            <br>
+
+            <input type="text" class="form-control" name="usuario" id="usuario" placeholder="Usuario" autofocus="">
+            <br>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+            <br>
+
+            <div class="row">
+
+                <div class="col-md-12 col-sm-12 p-3 text-center">
+                    <button type="submit" class="botonInicioSesion">INICIAR SESIÓN</button>
+                </div>
+
+            </div>
+            <p class=" text-center">
+                <a class="olvidarContraseña" href="reestablecerContraseña.php">¿Has olvidado tu contraseña?</a>
+            </p>
+
+
+            <div style = "font-size:11px; color:#cc0000; margin-top:10px"></div>
+
+        </form>
+
+    </div>
+
+
+
+    <br><br>
+</section>
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js">    </script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://unpkg.com/sweetalert2@9.5.3/dist/sweetalert2.all.min.js"></script>
+<script src="../js/script-login.js"></script>
+</body>
+
+</html>

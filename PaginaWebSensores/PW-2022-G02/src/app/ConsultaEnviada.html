@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="../css/styles.css" rel="stylesheet" type="text/css">
+    <!--<link href="css/ConsultaEnviada.css" rel="stylesheet" type="text/css">
+    <link href="css/header.css" rel="stylesheet" type="text/css">-->
+    <title>Consulta Enviada</title>
+</head>
+<header>
+    <div class="contenedorLogo">
+        <a href="../index.php"><img src="img/logoverde.png" class="logoGti" alt="El logo de la empresa, las letras G T I, con la T y la I de color verde"></a>
+    </div>
+    <div class="contenedorMenu">
+        <a href="javascript:void(0);" onclick="myFunction()"><img class="IconoHeader" src="img/lineas.svg"></a>
+        <a href="login.html" id="headerUsuario"><button class="botonHeader" >Iniciar sesión</button></a>
+
+    </div>
+</header>
+<!--Este es el menú desplegable, cuando hacemos click en el icono del header-->
+<div class="topnav">
+    <div id="myLinks">
+        <!--TODO: Hay que añadir páginas para cada una de estos links, aunque sean de demostración que son links-->
+        <div><a class="otrasPaginas" href="productos.php">Nuestros productos</a></div>
+        <div><a id="contactaLink" class="otrasPaginas" href="contactar.php">Contacta</a></div>
+
+        <div><a id="quienesSomosLink" class="otrasPaginas" href="nosotros.php">¿Quiénes somos?</a></div>
+        <div class="contenedorBotones">
+        </div>
+
+    </div>
+
+</div>
+
+<!--Código de JavaScript para desplegar el menú desplegable al hacer click en el icono de las 3 líneas horizontales en el header-->
+<script>
+    function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+<!--Fin de header y barra de navegación-->
+
+<body>
+<section class="consulta_enviada">
+    <p>Tu consulta ha sido enviada, le atenderemos cuanto antes.</p>
+</section>
+
+</body>
